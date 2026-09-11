@@ -1,0 +1,46 @@
+package com.example.compiler
+
+enum class TokenType {
+    // Keywords
+    KEYWORD_INT, KEYWORD_FLOAT, KEYWORD_CHAR, KEYWORD_DOUBLE, KEYWORD_VOID,
+    KEYWORD_RETURN, KEYWORD_IF, KEYWORD_ELSE, KEYWORD_WHILE, KEYWORD_FOR,
+    KEYWORD_DO, KEYWORD_BREAK, KEYWORD_CONTINUE, KEYWORD_SWITCH, KEYWORD_CASE,
+    KEYWORD_DEFAULT, KEYWORD_STRUCT, KEYWORD_SIZEOF, KEYWORD_TYPEDEF,
+    KEYWORD_CONST, KEYWORD_STATIC,
+
+    // Identifiers & Literals
+    IDENTIFIER,
+    INT_LITERAL,
+    FLOAT_LITERAL,
+    CHAR_LITERAL,
+    STRING_LITERAL,
+
+    // Operators
+    PLUS, MINUS, STAR, SLASH, PERCENT,
+    PLUS_PLUS, MINUS_MINUS,
+    ASSIGN, PLUS_ASSIGN, MINUS_ASSIGN, STAR_ASSIGN, SLASH_ASSIGN, PERCENT_ASSIGN,
+    EQUAL_EQUAL, BANG_EQUAL, LESS, LESS_EQUAL, GREATER, GREATER_EQUAL,
+    LOGICAL_AND, LOGICAL_OR, BANG,
+    AMPERSAND, PIPE, CARET, TILDE, SHL, SHR,
+    ARROW, DOT,
+
+    // Delimiters
+    LPAREN, RPAREN,
+    LBRACE, RBRACE,
+    LBRACKET, RBRACKET,
+    SEMICOLON, COMMA, COLON, QUESTION,
+
+    // Preprocessor
+    PREPROCESSOR,
+
+    // End of file / Comments
+    EOF
+}
+
+data class Token(
+    val type: TokenType,
+    val lexeme: String,
+    val value: Any? = null,
+    val line: Int,
+    val column: Int
+)

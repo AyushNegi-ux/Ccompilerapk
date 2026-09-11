@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Center Hexagon / Terminal badge container -->
+    <path
+        android:fillColor="#1E293B"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2"
+        android:pathData="M54,23 L80,38 L80,70 L54,85 L28,70 L28,38 Z" />
+
+    <!-- Stylized prominent "C" character in vibrant cyan/electric blue -->
+    <path
+        android:pathData="M66,41 C62.5,38 58.5,36.5 54,36.5 C44.5,36.5 37.5,43.8 37.5,54 C37.5,64.2 44.5,71.5 54,71.5 C59,71.5 63,69.5 66.5,66.5 L61.5,62 C59.5,64 57,65.2 54,65.2 C48,65.2 44,60.5 44,54 C44,47.5 48,42.8 54,42.8 C57,42.8 59.5,44 61.5,46 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="37.5"
+                android:startY="36.5"
+                android:endX="66"
+                android:endY="71.5"
+                android:type="linear">
+                <item android:color="#38BDF8" android:offset="0.0" />
+                <item android:color="#818CF8" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Terminal prompt underscore / cursor -->
+    <path
+        android:fillColor="#4ADE80"
+        android:pathData="M69,52 L76,52 L76,56 L69,56 Z" />
+</vector>

@@ -1,0 +1,6 @@
+{
+  "name": "C Compiler",
+  "description": "Offline C compiler, code editor with syntax highlighting, interactive terminal emulator, and hands-on coding challenges with daily streak tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
